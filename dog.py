@@ -4,6 +4,7 @@ class Dog:
         self.name = name
         self.breed = breed
         self.is_sitting = False
+        self.is_awake = False
         
     def bark(self):
         print("Woof!")
@@ -21,3 +22,10 @@ class Dog:
             print(f"{self.name} stands up")
         else:
             print(f"{self.name} is already standing!.")
+
+    def sleep(self):
+        if self.is_awake:
+            self.is_awake = False
+            print(f"{self.name} sleeps")
+        else:
+            print(f"{self.name} is already sleeping.")
