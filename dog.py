@@ -14,3 +14,10 @@ class Dog:
         else:
             self.is_sitting = True
             print(f"{self.name} sits down.")
+            
+    def stand(self):
+        if self.is_sitting:
+            self.is_sitting = False
+            print(f"{self.name} stands up")
+        else:
+            print(f"{self.name} is already standing!.")
